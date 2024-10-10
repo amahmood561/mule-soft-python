@@ -1,5 +1,4 @@
-# config/settings.py
 import os
 
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
-API_URL = os.getenv('API_URL', 'https://api.example.com')
+BROKER_URL = os.getenv('BROKER_URL', 'redis://localhost:6379/0')
